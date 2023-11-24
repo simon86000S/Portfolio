@@ -30,17 +30,18 @@ function Scene() {
 
 export default function App() {
   return (
-    <>
-      <Canvas camera={{ position: [-5, 2, 2] }}>
+    <div className={{overflow:"hidden"}}> 
+       <Canvas   camera={{ position: [-5, 2, 2] }}>
         <OrbitControls />
         <ambientLight intensity={0.5} />
         <spotLight position={[25, 25, 30]} angle={0.9} />
         <Suspense>
           <Scene />
         </Suspense>
-        <Environment files="./Models/space1.hdr" background></Environment>
+        <Environment files="./Models/ship1.hdr" background></Environment>
       </Canvas>
       <p>coucou les ami</p>
-    </>
+      </div>  
+    
   );
 }
