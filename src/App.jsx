@@ -38,7 +38,7 @@ export default function App() {
         <Suspense>
           <Scene />
         </Suspense>
-        <Environment files="./Models/ship1.hdr" background></Environment>
+        <Environment files="./Models/space.hdr" background></Environment>
       </Canvas>
       <p>coucou les ami</p>
       </div>  
