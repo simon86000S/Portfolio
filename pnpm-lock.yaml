@@ -55,6 +55,9 @@ devDependencies:
   postcss:
     specifier: ^8.4.31
     version: 8.4.31
+  tailwind-clip-path:
+    specifier: ^1.0.0
+    version: 1.0.0
   tailwindcss:
     specifier: ^3.3.5
     version: 3.3.5
@@ -2895,6 +2898,10 @@ packages:
     dependencies:
       react: 18.2.0
     dev: false
+
+  /tailwind-clip-path@1.0.0:
+    resolution: {integrity: sha512-pac3BiCZCEKtX+3In4508PFcX2eZL7JwliZMtfYE0RoqFMjfbCVLmu+uuEFqn1y/f2vrOB5rY4XNcmaOSG1csw==}
+    dev: true
 
   /tailwindcss@3.3.5:
     resolution: {integrity: sha512-5SEZU4J7pxZgSkv7FP1zY8i2TIAOooNZ1e/OGtxIEv6GltpoiXUqWvLy89+a10qYTB1N5Ifkuw9lqQkN9sscvA==}
