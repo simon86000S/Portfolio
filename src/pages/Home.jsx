@@ -19,7 +19,7 @@ function Scene() {
 
   return (
     <>
-      <mesh  onClick={(e) => console.log('click')} ref={ref} scale={[170, 170,170]}>
+      <mesh  onClick={(e) => console.log('click')} ref={ref} scale={[180, 180,180]}>
         <Player />
       </mesh>
     </>
