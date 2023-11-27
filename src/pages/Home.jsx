@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className="absolute top-0 w-[80%] right-0 " >
         
-      <Canvas  frameloop="demand" shadows camera={{ position: [-480, -200,-200] }} >
+      <Canvas   shadows camera={{ position: [-480, -200,-200] }} >
         
         <ambientLight intensity={0.5} />
         <spotLight position={[0, 0, 0]} angle={0.9} />
