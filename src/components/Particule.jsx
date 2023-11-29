@@ -53,7 +53,7 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
                         value: "#2DEF26",
                     },
                     links: {
-                        color: "#ffffff",
+                        color: "#2DEF26",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
