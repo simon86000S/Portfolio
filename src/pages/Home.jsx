@@ -29,7 +29,7 @@ function Scene() {
 export default function Home() {
     
   return (
-    <div className="absolute top-0 w-[80%] right-0 " >
+    <div className="sm:absolute top-0 w-[80%] right-0 " >
         
       <Canvas   shadows camera={{ position: [-480, -200,-200] }} >
         
