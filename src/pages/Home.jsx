@@ -7,7 +7,8 @@ import "../../src/App.css";
 import { PlayerMe } from "../../PlayerMe";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
-import {Player} from '../../Player';
+import { Player } from "../../Player";
+import Navbar from "../components/Navbar";
 function Scene() {
   const ref = useRef(null);
   useFrame(() => {
@@ -19,7 +20,11 @@ function Scene() {
 
   return (
     <>
-      <mesh  onClick={(e) => console.log('click')} ref={ref} scale={[180, 180,180]}>
+      <mesh
+        onClick={(e) => console.log("click")}
+        ref={ref}
+        scale={[180, 180, 180]}
+      >
         <Player />
       </mesh>
     </>
@@ -27,26 +32,23 @@ function Scene() {
 }
 
 export default function Home() {
-    
   return (
-    <div className="sm:absolute top-0 w-[80%] right-0 " >
-        
-      <Canvas   shadows camera={{ position: [-480, -200,-200] }} >
-        
+    <div className="absolute top-0 w-[100%] right-0 flex-2 h-[100vh] ">
+    <Navbar/>
+      <Canvas shadows camera={{ position: [-480, -200, -200] }}>
         <ambientLight intensity={0.5} />
         <spotLight position={[0, 0, 0]} angle={0.9} />
-       
-        <Suspense >
-        <OrbitControls
-        enableZoom={false}
-        maxPolarAngle={Math.PI /2}
-        minPolarAngle={Math.PI /2} />
-          <Scene 
+
+        <Suspense>
+          <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
           />
-          <Environment files='./Models/ship1.hdr' background ></Environment>
+          <Scene />
+          <Environment files="./Models/ship1.hdr" background></Environment>
         </Suspense>
       </Canvas>
-
-</div>
+    </div>
   );
 }

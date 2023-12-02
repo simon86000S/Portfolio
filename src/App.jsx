@@ -7,7 +7,7 @@ const App = () => {
   return (
     <main >
       <Router>
-      <Navbar/>
+      
         <Routes>
           <Route path="/" element={<Home />}></Route>
      
