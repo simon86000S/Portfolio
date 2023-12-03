@@ -42,9 +42,9 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "text-lime-600   flex   relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[150px] before:left-[29px] before:h-[150px] before:bg-gradient-to-r from-lime-500 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5  "
-                            : "text-lime-600  flex relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[150px] before:left-[29px] before:h-[150px] before:bg-gradient-to-r from-lime-500 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5  ",
-                          " px-[75px] py-10 font-medium flex justify-between   hover:text-lime-300"
+                            ? "text-lime-600   flex   relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[150px] before:left-[60px] before:h-[150px] before:bg-gradient-to-r from-lime-500 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5  "
+                            : "text-lime-600  flex relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[150px] before:left-[60px] before:h-[150px] before:bg-gradient-to-r from-lime-500 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5  ",
+                          " px-[75px] py-10 font-medium flex justify-between   hover:text-lime-400"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
