@@ -34,6 +34,7 @@ function Scene() {
 export default function Home() {
   return (
     <div className="absolute top-0 w-[100%] right-0 flex-2 h-[100vh] ">
+    
     <Navbar/>
       <Canvas shadows camera={{ position: [-480, -200, -200] }}>
         <ambientLight intensity={0.5} />
