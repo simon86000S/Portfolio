@@ -4,11 +4,12 @@ import { TextureLoader } from "three/src/loaders/TextureLoader";
 import { Loader, OrbitControls, useTexture } from "@react-three/drei";
 import { Environment } from "@react-three/drei";
 import "../../src/App.css";
-import { PlayerMe } from "../../PlayerMe";
+
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import { Player } from "../../Player";
 import Navbar from "../components/Navbar";
+import MyProject from "../components/MyProject";
 function Scene() {
   const ref = useRef(null);
   useFrame(() => {
@@ -36,6 +37,7 @@ export default function Home() {
     <div className="absolute top-0 w-[100%] right-0 flex-2 h-[100vh] ">
     
     <Navbar/>
+    
       <Canvas shadows camera={{ position: [-480, -200, -200] }}>
         <ambientLight intensity={0.5} />
         <spotLight position={[0, 0, 0]} angle={0.9} />
@@ -49,7 +51,9 @@ export default function Home() {
           <Scene />
           <Environment files="./Models/ship1.hdr" background></Environment>
         </Suspense>
+
       </Canvas>
+    <MyProject/>
     </div>
   );
 }
