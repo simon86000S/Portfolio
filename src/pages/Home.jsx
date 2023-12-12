@@ -66,6 +66,7 @@ export default function Home() {
             minPolarAngle={Math.PI / 2}
           />
           <Scene />
+          <Environment files="./Models/ship1.hdr" background />
         </Suspense>
       </Canvas>
     </div>
