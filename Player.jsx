@@ -4,12 +4,15 @@ Command: npx gltfjsx@6.1.4 D:\Portfolio\Portfolio\public\Models\Player.glb
 */
 
 import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import { useAnimations, useGLTF } from '@react-three/drei'
 import {motion} from 'framer-motion-3d'
+import { useState } from 'react';
 
 export function Player(props) {
   const {section} =props;
-  const { nodes, materials } = useGLTF('/Models/Player.glb')
+  const { nodes, materials} = useGLTF('/Models/Player.glb')
+ 
+
   return (
     <group {...props} dispose={null}>
       <group  position={[0, -1.71, -0.04]} scale={1.84}>

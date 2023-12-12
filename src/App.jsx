@@ -2,20 +2,17 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import MyProject from "./components/MyProject";
 
 const App = () => {
   return (
-    <main >
-      
+    <main>
       <Router>
-      
+        <Home/>
+        <MyProject/>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-     
-
+          
         </Routes>
-      
-
       </Router>
     </main>
   );
