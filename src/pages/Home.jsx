@@ -48,7 +48,7 @@ function Scene() {
 
 export default function Home() {
   return (
-    <div className="  w-[100%]  flex flex-col h-[100vh] lg:flex  ">
+    <div className=" lg: w-[100%]  flex flex-col  h-[100vh]  max-sm:flex ">
       <Navbar />
 
       <Canvas

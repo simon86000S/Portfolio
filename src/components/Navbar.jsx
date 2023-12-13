@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import sim from '../assets/simm.jpg';
+import sim from "../assets/simm.jpg";
 import Particule from "./Particule";
 const navigation = [
   { name: "Accueil", href: "#", current: true },
@@ -16,9 +16,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-   
-
-    <Disclosure as="nav" className="bg-black">
+    <Disclosure as="nav" className="bg-black ">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -35,10 +33,9 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-             
 
-              <div className="flex flex-1   w-[100%] sm:items-stretch sm:justify-start">
-                <div className="hidden sm:ml-6 sm:block">
+              <div className="flex   w-[100%] sm:items-stretch sm:justify-start">
+                <div className="hidden sm:-ml-10 flex items-center sm:block">
                   <div className=" flex justify-between  pt-5  text-[15px]  uppercase">
                     {navigation.map((item) => (
                       <a
@@ -46,9 +43,9 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "text-lime-100 text-lg font-extrabold  flex   relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[150px] before:left-[60px] before:h-[150px] before:bg-gradient-to-r from-lime-500 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5   "
-                            : "text-lime-100 text-lg font-extrabold  flex relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[150px] before:left-[60px] before:h-[150px] before:bg-gradient-to-r from-lime-500 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5  ",
-                          " px-[75px] text-[13px] font-extrabold py-[70px] font-medium flex justify-between   hover:text-lime-400"
+                            ? "text-lime-100 text-sm font-extrabold  flex   relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[110px] before:left-[35px] before:h-[100px] before:bg-gradient-to-b from-lime-500 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5   "
+                            : "text-lime-100 text-sm font-extrabold  flex relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[110px] before:left-[35px] before:h-[100px] before:bg-gradient-to-r from-lime-500 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5  ",
+                          " px-[45px] text-[13px] font-extrabold py-[39px] font-medium flex justify-between hover:text-lime-400"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -59,8 +56,6 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                
-
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div>
@@ -153,6 +148,5 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
-
   );
 }
