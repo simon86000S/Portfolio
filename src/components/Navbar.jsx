@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import sim from "../assets/simm.jpg";
-import Particule from "./Particule";
 const navigation = [
   { name: "Accueil", href: "#", current: true },
   { name: "projets", href: "#", current: false },
@@ -34,18 +33,18 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
 
-              <div className="flex   w-[100%] sm:items-stretch sm:justify-start">
+              <div className="flex   w-[80%] sm:items-stretch sm:justify-start">
                 <div className="hidden sm:-ml-10 flex items-center sm:block">
-                  <div className=" flex justify-between  pt-5  text-[15px]  uppercase">
+                  <div className=" flex justify-between  pt-10 text-[15px]  uppercase">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "text-lime-100 text-sm font-extrabold  flex   relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[110px] before:left-[35px] before:h-[100px] before:bg-gradient-to-b from-lime-500 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5   "
-                            : "text-lime-100 text-sm font-extrabold  flex relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[110px] before:left-[35px] before:h-[100px] before:bg-gradient-to-r from-lime-500 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5  ",
-                          " px-[45px] text-[13px] font-extrabold py-[39px] font-medium flex justify-between hover:text-lime-400"
+                            ? "text-lime-100 text-sm font-extrabold  flex   relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[130px] before:left-[35px] before:h-[100px] before:bg-gradient-to-b from-lime-500 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5   "
+                            : "text-lime-100 text-sm font-extrabold  flex relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[130px] before:left-[35px] before:h-[100px] before:bg-gradient-to-r from-lime-500 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5  ",
+                          " px-[55px] text-[13px] font-extrabold py-[39px] font-medium flex justify-between hover:text-lime-400"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >

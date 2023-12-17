@@ -54,10 +54,10 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
                     },
                     links: {
                         color: "#2DEF26",
-                        distance: 150,
+                        distance:250,
                         enable: true,
                         opacity: 0.5,
-                        width: 1,
+                        width: 0.5,
                     },
                     move: {
                         direction: "none",
@@ -72,7 +72,7 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
                     number: {
                         density: {
                             enable: true,
-                            area: 900,
+                            area: 700,
                         },
                         value: 80,
                     },
