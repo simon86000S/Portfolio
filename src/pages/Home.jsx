@@ -14,6 +14,7 @@ import { useRef } from "react";
 import { Player } from "../../Player";
 import Navbar from "../components/Navbar";
 import Description from "../components/Description";
+import MyProject from "../components/MyProject";
 function Scene() {
   const [hovered, setHover] = useState(false);
   const ref = useRef(null);
@@ -44,9 +45,10 @@ function Scene() {
 
 export default function Home() {
   return (
-    <div className=" lg: w-[100%]  flex flex-col  h-[100vh]  max-sm:flex ">
+    <div id='Home' className=" lg: w-[100%]  flex flex-col  h-[100vh]  max-sm:flex ">
       <Navbar />
       <Description/>
+     
 
       
     </div>
