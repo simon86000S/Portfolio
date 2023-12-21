@@ -3,11 +3,11 @@ import Particule from "./Particule";
 import { Suspense, useState } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-
 import "../../src/App.css";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import { Player } from "../../Player";
+import Caroussel from "./Caroussel";
 const MyProject = () => {
   function Scene() {
     const [hovered, setHover] = useState(false);
@@ -15,7 +15,7 @@ const MyProject = () => {
     useFrame(() => {
       ref.current.rotation.y = 6;
       ref.current.position.y = -90;
-      ref.current.position.x = 50;
+      ref.current.position.x = 30;
       ref.current.position.z = 20;
       if (hovered) {
         ref.current.rotation.x = 150;
@@ -25,12 +25,7 @@ const MyProject = () => {
 
     return (
       <>
-        <mesh
-          className="zIndex:-10  "
-          onClick={() => setHover(true)}
-          ref={ref}
-          scale={[180, 180, 180]}
-        >
+        <mesh onClick={() => setHover(true)} ref={ref} scale={[180, 180, 180]}>
           <Player />
         </mesh>
       </>
@@ -39,18 +34,20 @@ const MyProject = () => {
   return (
     <div
       id="Project"
-      className=" flex justify-between bg-slate-200 shadow-xl shadow-black p-15   h-[100vh]"
+      className=" flex 
+      flex-col bg-slate-200 shadow-xl shadow-black p-15 h-[100vh]"
     >
       <Particule />
-
-      <div className="">
-        <h1 className='min-md:relative  text-center text-8xl before:content-["Projets"] before:text-black before:opacity-10 before:absolute before:-bottom-25  before:left-[15%] before:text-7xl max-sm:text-3xl before:text-5xl  '>
+      <div className="relative">
+        <h1 className='min-md:relative  text-8xl before:content-["Projets"] before:text-black before:opacity-10 before:absolute before:-bottom-10  before:left-[40%] before:text-7xl max-sm:text-3xl before:text-5xl flex justify-center  '>
           Projets
         </h1>
+        <Caroussel />
+        <div></div>
       </div>
-
       <Canvas camera={{ fov: 75, position: [-70, 350, 350] }}>
         <Scene />
+        <OrbitControls />
       </Canvas>
     </div>
   );

@@ -1,11 +1,17 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon,Bars3BottomLeftIcon  } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  BellIcon,
+  XMarkIcon,
+  Bars3BottomLeftIcon,
+} from "@heroicons/react/24/outline";
 import sim from "../assets/simm.jpg";
+
 const navigation = [
   { name: "Accueil", href: "#Home", current: true },
-  { name: "projets", href: "#Project", current: false },
-  { name: "compétences", href: "#", current: false },
+  { name: "Projets", href: "#Project", current: false },
+  { name: "Compétences", href: "#", current: false },
   { name: "Contact", href: "#", current: false },
 ];
 
@@ -15,10 +21,9 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-black  ">
+    <Disclosure as="nav" className="bg-black   ">
       {({ open }) => (
         <>
-         
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-[25vh]">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -29,7 +34,10 @@ export default function Navbar() {
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <Bars3BottomLeftIcon className="block h-8 w-8 text-lime-600" aria-hidden="true" />
+                    <Bars3BottomLeftIcon
+                      className="block h-8 w-8 text-lime-600"
+                      aria-hidden="true"
+                    />
                   )}
                 </Disclosure.Button>
               </div>
