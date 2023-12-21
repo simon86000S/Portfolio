@@ -25,7 +25,7 @@ const MyProject = () => {
 
     return (
       <>
-        <mesh onClick={() => setHover(true)} ref={ref} scale={[180, 180, 180]}>
+        <mesh className="z-50 ">
           <Player />
         </mesh>
       </>
@@ -39,16 +39,14 @@ const MyProject = () => {
     >
       <Particule />
       <div className="relative">
-        <h1 className='min-md:relative  text-8xl before:content-["Projets"] before:text-black before:opacity-10 before:absolute before:-bottom-10  before:left-[40%] before:text-7xl max-sm:text-3xl before:text-5xl flex justify-center  '>
+        <h1 className='min-md:relative  text-8xl before:content-["Projets"] before:text-black before:opacity-10 before:absolute before:top-20  before:left-[40%] before:text-7xl max-sm:text-3xl before:text-5xl before:left-10 flex justify-center  '>
           Projets
         </h1>
+
         <Caroussel />
+
         <div></div>
       </div>
-      <Canvas camera={{ fov: 75, position: [-70, 350, 350] }}>
-        <Scene />
-        <OrbitControls />
-      </Canvas>
     </div>
   );
 };
