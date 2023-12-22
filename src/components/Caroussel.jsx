@@ -23,7 +23,7 @@ const Caroussel = () => {
           clickable: true,
         }}
         modules={[FreeMode, Pagination, Autoplay]}
-        className="mt-[70px] pl-10 max-sm:w-[100vh] pl-0   "
+        className="mt-[70px] pl-10 max-sm:w-[100vh] pl-0 overflow-x-hidden  "
       >
         <SwiperSlide
           className="  text-white h-[590px] rounded-md flex flex-col bg-black  "
