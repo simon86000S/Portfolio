@@ -39,7 +39,7 @@ const MyProject = () => {
     >
       <Particule />
       <div className="relative">
-        <h1 className='min-md:relative  text-8xl before:content-["Projets"] before:text-black before:opacity-10 before:absolute before:top-20  before:left-[40%] before:text-7xl max-sm:text-3xl before:text-5xl before:left-10 flex justify-center before:top-5  '>
+        <h1 className='min-md:relative  text-8xl before:content-["Projets"] before:text-black before:opacity-10 before:absolute before:top-20  before:left-[40%] before:text-7xl max-sm:text-3xl before:text-5xl before:left-10 flex justify-center max-sm:before:top-5  '>
           Projets
         </h1>
 
