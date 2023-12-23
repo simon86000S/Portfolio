@@ -1,7 +1,6 @@
 import Navbar from "../components/Navbar";
 import Description from "../components/Description";
 import MyProject from "../components/MyProject";
-
 export default function Home() {
   return (
     <div
@@ -10,6 +9,7 @@ export default function Home() {
     >
       <Navbar />
       <Description />
+   
     </div>
   );
 }
