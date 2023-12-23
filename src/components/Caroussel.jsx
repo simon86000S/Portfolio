@@ -5,12 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-
+import 'swiper/css/navigation';
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import debrou from "../assets/debrou.mp4";
 // import required modules
-import { FreeMode, Pagination, Autoplay } from "swiper/modules";
+import { FreeMode, Pagination, Autoplay,Navigation } from "swiper/modules";
 import navBar from "../assets/navBar.jpg";
 const Caroussel = () => {
   const [rezize, setRezize] = useState(true);
@@ -34,17 +34,16 @@ const Caroussel = () => {
   return (
 <div>
 <>
-  <Swiper
-  slidesPerView={3}
-  spaceBetween={30}
-  freeMode={true}
-  pagination={{
-    clickable: true
-  }}
-  modules={[FreeMode, Pagination, Autoplay]}
-  className="mt-[70px] pl-10 max-sm: pl-0 ">
+<Swiper
+        pagination={{
+          type: 'progressbar',
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+       
+  className="mt-[70px] p-12    ">
   <SwiperSlide
-    className="text-white h-[590px] rounded-md flex flex-col bg-black  "
+    className=" text-white h-[full] rounded-md flex flex-col bg-black max-sm:w-lvw  "
     data-swiper-autoplay="2000"
   >
     <video autoplay loop muted className="relative">
@@ -84,7 +83,7 @@ const Caroussel = () => {
     </div>
   </SwiperSlide>
   <SwiperSlide
-    className="bg-white h-[580px] rounded-md "
+    className="bg-white h-[580px]  rounded-md  "
     data-swiper-autoplay="2000"
   >
     Slide 2
