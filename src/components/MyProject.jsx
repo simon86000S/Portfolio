@@ -35,7 +35,7 @@ const MyProject = () => {
     <div
       id="Project"
       className=" flex 
-      flex-col bg-slate-200 shadow-xl shadow-black p-15 h-[100vh]"
+      flex-col bg-slate-200 shadow-xl shadow-black pt-10 h-[100vh]"
     >
       <Particule />
       <div className="relative">

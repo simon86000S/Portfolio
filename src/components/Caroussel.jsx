@@ -8,25 +8,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import 'swiper/css/effect-fade';
 import debrou from "../assets/debrou.mp4";
 // import required modules
-import { FreeMode, Pagination, Autoplay, Navigation } from "swiper/modules";
+import { Pagination, Navigation,EffectFade} from "swiper/modules";
 import navBar from "../assets/navBar.jpg";
 const Caroussel = () => {
   return (
     <div>
       <>
         <Swiper
+         effect={'fade'}
           pagination={{
             type: "progressbar",
           }}
           navigation={true}
-          modules={[Pagination, Navigation]}
+        
+          modules={[Pagination, Navigation, EffectFade]} 
           className="mt-[70px] p-12 w-[50%] rounded-3xl max-sm:w-[100%]  "
         >
           <SwiperSlide
             className=" text-white  flex flex-col bg-black shadow-xl shadow-black "
-            data-swiper-autoplay="2000"
+           
           >
             <video autoplay loop muted className="relative ">
               <source src={debrou} type="video/mp4" />
