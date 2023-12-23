@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Description = () => {
   return (
-    <div className="bg-black h-full text-white">
+    <div className="bg-black h-full rounded-xl shadow-xl shadow-black text-white">
       <div className="lg:relative inline-flex w-[60%] leading-7 p-10 uppercase left-[20%]  ">
         <Typewriter
           className="lg:text-xl "
