@@ -4,16 +4,16 @@ import Button from "./Button";
 
 const Description = () => {
   return (
-    <div className="bg-black h-full  shadow-xl shadow-black text-white">
+    <div className="bg-black h-full  shadow-xl shadow-black  text-stone-500 ">
       <div className="lg:relative inline-flex w-[60%] leading-7 p-10 uppercase left-[20%]  ">
         <Typewriter
           className="lg:text-xl "
           onInit={(typewriter) => {
             typewriter
-
-              .typeString(
+             .typeString(
                 "Bonjour et bienvenue sur mon portfolio <br></br> Je suis Simon Audrain, un développeur passionné, specialisé sur React JS. Je suis un mordu de l'informatique en quête sans cesse d'apprentissage.  "
               )
+             
 
               .start();
           }}
