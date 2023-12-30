@@ -16,9 +16,9 @@ const Description = () => {
                 className="max-sm:text-4xl  lg:text-6xl "
                 strings={[
                   "Développeur Fullstack",
-                  "Font-End",
-                  "Back-End",
-                  "Base de données",
+                  "Développeur Font-End",
+                  "Développeur Back-End",
+                  "Gestion de Base de données",
                 ]}
                 typeSpeed={50}
                 loop
