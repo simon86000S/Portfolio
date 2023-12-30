@@ -3,7 +3,7 @@ import { Player } from "../../Player";
 import { useRef } from "react";
 import { Canvas,useFrame } from "@react-three/fiber";
 import { Environment } from '@react-three/drei';
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei';
 const Skills = () => {
     function Scene() {
         const ref = useRef(null);
@@ -40,7 +40,7 @@ const Skills = () => {
         );
       }
   return (
-    <div className="h-[100vh] bg-slate-200 shadow-xl shadow-black ">
+    <div className="h-[100vh] bg-slate-200 shadow-xl shadow-black z-50">
       <div className="relative">
         <h1 className=' text-center pt-[250px]   text-8xl before:content-["Compétences"] before:text-black before:opacity-10 before:absolute before:bottom-[40px]  before:left-[25%] before:text-8xl max-sm:text-3xl max-sm:before:text-[40px] flex justify-center max-sm:before:-bottom-5 max-sm:pt-20  '>
           Mes Compétences
@@ -58,7 +58,9 @@ const Skills = () => {
             <p>fff</p>
             <p>fff</p>
             <p>fff</p>
-            <p>fff</p>
+            <p>
+            
+            </p>
           </div>
         </div>
         <div className=" h-screen flex-1">

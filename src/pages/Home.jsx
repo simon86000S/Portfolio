@@ -7,8 +7,10 @@ export default function Home() {
       id="Home"
       className=" lg: w-[100%]  flex flex-col  h-[100vh]  max-sm:flex "
     >
-      <Navbar />
+  
       <Description />
+      <Navbar />
+     
    
     </div>
   );

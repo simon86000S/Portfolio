@@ -19,7 +19,7 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
     }, []);
 
     return (
-        <Particles
+        <Particles 
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
@@ -54,7 +54,7 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
                     },
                     links: {
                         color: "#2DEF26",
-                        distance:250,
+                        distance:150,
                         enable: true,
                         opacity: 0.5,
                         width: 0.5,
@@ -72,7 +72,7 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
                     number: {
                         density: {
                             enable: true,
-                            area: 700,
+                            area: 400,
                         },
                         value: 80,
                     },
@@ -83,7 +83,7 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 1, max: 2 },
                     },
                 },
                 detectRetina: true,

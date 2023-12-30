@@ -6,16 +6,14 @@ export default {
   ],
   theme: {
     extend: {
-      keyframes: {
-        wiggle: {
-          '0%': { transform: 'translate-y-1/4' },
-          '100%': { transform: 'translate-y-full' },
-        }
+      backgroundImage: {
+        'hero-pattern': "url('../assets/simm.jpg')",
+        
       }
-    },
   },
   plugins: [
     require('tailwind-clip-path'),
   ],
 }
 
+}

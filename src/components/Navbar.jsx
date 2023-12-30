@@ -21,11 +21,11 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-black   ">
+    <Disclosure as="nav" className="bg-slate-100">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-[25vh]">
+            <div className="relative flex h-[15vh]">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -35,7 +35,7 @@ export default function Navbar() {
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
                     <Bars3BottomLeftIcon
-                      className="block h-8 w-8 text-lime-600"
+                      className="block h-8 w-8 text-black"
                       aria-hidden="true"
                     />
                   )}
@@ -70,11 +70,7 @@ export default function Navbar() {
                     <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
-                      <img
-                        className="h-[100px]} w-[100px] rounded-full"
-                        src={sim}
-                        alt=""
-                      />
+                     <h1 className="text-black text-xl rounded-none bg-slate-100">Simon AUDRAIN</h1>
                     </Menu.Button>
                   </div>
                   <Transition

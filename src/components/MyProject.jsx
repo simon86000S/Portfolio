@@ -1,5 +1,4 @@
 import React from "react";
-import Particule from "./Particule";
 import { Suspense, useState } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
@@ -35,9 +34,9 @@ const MyProject = () => {
     <div
       id="Project"
       className=" flex 
-      flex-col bg-slate-200 shadow-xl shadow-black pt-10 h-[100vh]"
+      flex-col bg-slate-200 shadow-xl shadow-black pt-10 h-[100vh] "
     >
-      <Particule />
+
       <div className="relative">
         <h1 className='min-md:relative  text-8xl before:content-["Projets"] before:text-black before:opacity-10 before:absolute before:top-0 before:left-[40%] before:text-8xl max-sm:text-3xl max-sm:before:text-[40px] before:left-0% flex justify-center max-sm:before:bottom-0  '>
           Projets
