@@ -51,7 +51,7 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "text-lime-100 text-sm font-extrabold  flex   relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[130px] before:left-[35px] before:h-[100px] before:bg-gradient-to-b from-lime-400 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5   "
+                            ? "text-lime-900 text-sm font-extrabold  flex   relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[130px] before:left-[35px] before:h-[100px] before:bg-gradient-to-b from-lime-400 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5   "
                             : "text-lime-100 text-sm font-extrabold  flex relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[130px] before:left-[35px] before:h-[100px] before:bg-gradient-to-r from-lime-400 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-lime-500  opacity-0.5  ",
                           " px-[55px] text-[13px] font-extrabold py-[39px] font-medium flex justify-between hover:text-lime-400"
                         )}
@@ -139,7 +139,7 @@ export default function Navbar() {
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      : "text-gray-900 hover:bg-gray-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
