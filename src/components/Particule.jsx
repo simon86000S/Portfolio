@@ -50,10 +50,10 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
                 },
                 particles: {
                     color: {
-                        value: "#2DEF26",
+                        value: "#7E7E7E",
                     },
                     links: {
-                        color: "#2DEF26",
+                        color: "#FFFFFF",
                         distance:150,
                         enable: true,
                         opacity: 0.5,
@@ -66,7 +66,7 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
                             default: "bounce",
                         },
                         random: false,
-                        speed: 3,
+                        speed: 1,
                         straight: false,
                     },
                     number: {
