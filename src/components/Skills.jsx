@@ -42,7 +42,7 @@ const Skills = () => {
   return (
     <div className="h-[100vh] bg-slate-200 shadow-xl shadow-black z-50">
       <div className="relative">
-        <h1 className=' text-center pt-[250px]   text-8xl before:content-["Compétences"] before:text-black before:opacity-10 before:absolute before:bottom-[40px]  before:left-[25%] before:text-8xl max-sm:text-3xl max-sm:before:text-[40px] flex justify-center max-sm:before:-bottom-5 max-sm:pt-20  '>
+        <h1 className=' min-md:relative  text-8xl before:content-["à_propos"] before:text-black before:opacity-5 before:absolute before:top-10 before:left-[40%] before:text-9xl max-sm:text-5xl max-md:before:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0   '>
           Mes Compétences
         </h1>
       </div>

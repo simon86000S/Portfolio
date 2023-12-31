@@ -9,12 +9,12 @@ import { useRef } from "react";
 import { Player } from "../../Player";
 import Caroussel from "./Caroussel_vitrine";
 const MyProject = () => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
   const navigation = [
-    { name: "ViteJs", href: "#ViteJs", current: true },
-    { name: "MySql", href: "#Project", current: false },
-    { name: "NextJs", href: "#", current: false },
-    { name: "site avec Back", href: "#", current: false },
+    { name: "ViteJs", Link: "Caroussel", current: true },
+    { name: "ViteJs & NodeJs", Link: "Caroussel_Back", current: false },
+    { name: "NextJs", Link: "#", current: false },
+    { name: "MySQL", Link: "#", current: false },
   ];
   const Active = () => {
  setActive(!active)
@@ -22,25 +22,22 @@ const MyProject = () => {
   return (
     <div id="Project" className="  bg-slate-200 shadow-xl shadow-black pt-10">
       <div className="relative">
-        <h1 className='min-md:relative  text-8xl before:content-["Projets"] before:text-black before:opacity-10 before:absolute before:top-10 before:left-[45%] before:text-8xl max-sm:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0  '>
+        <h1 className='min-md:relative  text-8xl before:content-["Portfolio"] before:text-black before:opacity-5 before:absolute before:top-10 before:left-[40%] before:text-9xl max-sm:text-5xl max-md:before:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0  '>
           Mes Projets
         </h1>
-        <div className="p-10 m-10">
-        {navigation.map((item) => (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "text-gray-900 text-sm font-extrabold  flex   relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[130px] before:left-[35px] before:h-[100px] before:bg-gradient-to-b from-gray-800 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-gray-500  opacity-0.5   "
-                            : "text-gray-900 text-sm font-extrabold  flex relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[130px] before:left-[35px] before:h-[100px] before:bg-gradient-to-r from-gray-800 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-gray-500  opacity-0.5  ",
-                          " px-[55px] text-[13px] font-extrabold py-[39px] font-medium flex  hover:text-green-600"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
+        <div className="p-10 m-20">
+          {" "}
+          {navigation.map(item=>(
+            <Link
+            key={item.name}
+            to={item.Link}
+            className="p-5 bg-black text-white ml-5"
+          
+            
+          >
+            {item.name}
+          </Link>
+          ))}
         </div>
 
         <div></div>
