@@ -15,12 +15,7 @@ import { Pagination, Navigation, EffectFade } from "swiper/modules";
 import navBar from "../assets/navBar.jpg";
 const Caroussel_Back = () => {
     
-const [active, setActive] = useState(true)
-    const Active=()=>{
-if(true){
 
-}
-    }
   return (
     <div>
       <>

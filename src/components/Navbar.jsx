@@ -68,9 +68,8 @@ export default function Navbar() {
                 <Menu as="div" className="relative ml-3">
                   <div>
                     <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                      <span className="absolute -inset-1.5" />
+                      <span className="absolute -inset-1.5 "/>
                       <span className="sr-only">Open user menu</span>
-                     <h1 className="translate-y-6 text-black rounded-none bg-transparent max-sm:-inset-5 lg:text-lg max-md:hidden ">Simon AUDRAIN</h1>
                     </Menu.Button>
                   </div>
                   <Transition
