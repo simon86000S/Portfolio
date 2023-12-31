@@ -24,7 +24,7 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-slate-100 z-50  ">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-8xl px-8  sm:px-6 lg:px-8">
+          <div className=" mx-auto max-w-8xl px-8  sm:px-6 lg:px-8">
             <div className="relative flex h-[15vh]">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -63,7 +63,7 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:sticky top-0 sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div>
