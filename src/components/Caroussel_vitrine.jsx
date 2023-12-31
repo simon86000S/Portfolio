@@ -16,6 +16,7 @@ import navBar from "../assets/navBar.jpg";
 const Caroussel = () => {
   return (
     <div>
+      
       <>
         <Swiper
          effect={'fade'}
@@ -25,7 +26,7 @@ const Caroussel = () => {
           navigation={true}
         
           modules={[Pagination, Navigation, EffectFade]} 
-          className="mt-[70px] p-12 w-[50%] rounded-3xl max-sm:w-[100%]  "
+          className=" p-12 w-[50%] rounded-3xl max-sm:w-[100%]  "
         >
           <SwiperSlide
             className=" text-white  flex flex-col bg-black shadow-xl shadow-black "

@@ -3,7 +3,7 @@ import ReactTyped from "react-typed";
 import CV from "../assets/CV.pdf";
 const Description = () => {
   return (
-    <div className=" relative  h-full bg-cover  bg-[url('./assets/simm.jpg')]  bg-center pl-2 bg-no-repeat text-gray-200 after:content-[''] after:w-full after:h-full after:bg-black  after:absolute after:top-0 after:left-0 after:opacity-60 ">
+    <div className=" relative    h-full bg-cover  bg-[url('./assets/simm.jpg')]  bg-center pl-2 bg-no-repeat text-gray-200 after:content-[''] after:w-full after:h-full after:bg-black  after:absolute after:top-0 after:left-0 after:shadow-xl after:shadow-black after:opacity-60 ">
       <div className=" md:flex items-center justify-center  h-full">
         <div className=" max-sm:flex items-end justify-center h-full text-6xl flex max-sm:leading-5 max-sm:flex   ">
           <div className=" max-sm:p-10 rounded-xl mb-20 opacity-100 z-50">

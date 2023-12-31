@@ -23,6 +23,7 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
+            
             options={{
               
                 fpsLimit: 120,
