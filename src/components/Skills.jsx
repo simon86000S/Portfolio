@@ -1,44 +1,42 @@
-import React,{useState,Suspense}from "react";
+import React, { useState, Suspense } from "react";
 import { Player } from "../../Player";
 import { useRef } from "react";
-import { Canvas,useFrame } from "@react-three/fiber";
-import { Environment } from '@react-three/drei';
-import { OrbitControls } from '@react-three/drei';
+import { Canvas, useFrame } from "@react-three/fiber";
+import { Environment } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 const Skills = () => {
+  function Scene() {
+    const ref = useRef(null);
+    useFrame((_, delta) => {
+      ref.current.rotation.y = 10.4;
+    });
     function Scene() {
-        const ref = useRef(null);
-        useFrame((_, delta) => {
-            ref.current.rotation.y=10.4
-            
-          })
-     function Scene() {
-      
-        return (
-          <>
-            <mesh
-              onClick={(e) => console.log("click")}
-              ref={ref}
-              scale={[180, 180, 180]}
-            >
-              <Player />
-            </mesh>
-          </>
-        );
-      }
-    
-        return (
-          <>
-            <mesh
-              className="zIndex:-10  "
-              onClick={() => setHover(true)}
-              ref={ref}
-              scale={[180, 180, 180]}
-            >
-              <Player />
-            </mesh>
-          </>
-        );
-      }
+      return (
+        <>
+          <mesh
+            onClick={(e) => console.log("click")}
+            ref={ref}
+            scale={[180, 180, 180]}
+          >
+            <Player />
+          </mesh>
+        </>
+      );
+    }
+
+    return (
+      <>
+        <mesh
+          className="zIndex:-10  "
+          onClick={() => setHover(true)}
+          ref={ref}
+          scale={[180, 180, 180]}
+        >
+          <Player />
+        </mesh>
+      </>
+    );
+  }
   return (
     <div className="h-[100vh] bg-slate-200 shadow-xl shadow-black z-50">
       <div className="relative">
@@ -58,28 +56,24 @@ const Skills = () => {
             <p>fff</p>
             <p>fff</p>
             <p>fff</p>
-            <p>
-            
-            </p>
+            <p></p>
           </div>
         </div>
         <div className=" h-screen flex-1">
+          <Canvas shadows camera={{ position: [-380, -200, -200] }}>
+            <ambientLight intensity={0.5} />
+            <spotLight position={[0, 0, 0]} angle={0.9} />
 
-        <Canvas shadows camera={{ position: [-380, -200, -200] }}>
-        <ambientLight intensity={0.5} />
-        <spotLight position={[0, 0, 0]} angle={0.9} />
-
-        <Suspense>
-          <OrbitControls
-            enableZoom={false}
-            maxPolarAngle={Math.PI / 2}
-            minPolarAngle={Math.PI / 2}
-          />
-          <Scene />
-          <Environment files="./Models/ship1.hdr" background />
-                  </Suspense>
-      </Canvas>
-
+            <Suspense>
+              <OrbitControls
+                enableZoom={false}
+                maxPolarAngle={Math.PI / 2}
+                minPolarAngle={Math.PI / 2}
+              />
+              <Scene />
+              <Environment files="./Models/ship1.hdr" background />
+            </Suspense>
+          </Canvas>
         </div>
       </div>
     </div>
