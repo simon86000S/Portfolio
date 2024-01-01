@@ -25,7 +25,7 @@ const Caroussel = () => {
           modules={[Pagination, Navigation, EffectFade]}
           className=" p-12 w-[50%] rounded-3xl max-sm:w-[100%]  "
         >
-          <SwiperSlide className=" text-white  flex flex-col bg-black shadow-xl shadow-black ">
+          <SwiperSlide className=" text-white h-[500px]  flex flex-col bg-black shadow-xl shadow-black ">
             <img className="w-full h-full" src={background} />
            
             <Link
@@ -67,7 +67,7 @@ const Caroussel = () => {
             Slide 2
           </SwiperSlide>
           <SwiperSlide
-            className="bg-white h-[580px] rounded-md"
+            className="bg-white h-[500px] rounded-md"
             data-swiper-autoplay="2000"
           >
             Slide 3
