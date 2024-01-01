@@ -11,12 +11,14 @@ import Caroussel from "./Caroussel_vitrine";
 const MyProject = () => {
   const [active, setActive] = useState(true);
   const navigation = [
-    { name: "ViteJs", Link: "Caroussel", current: true },
+    { name: "ViteJs", Link: "/", current: true },
     { name: "NodeJs", Link: "Caroussel_Back", current: false },
     { name: "NextJs", Link: "#", current: false },
     { name: "MySQL", Link: "#", current: false },
   ];
- 
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
   return (
     <div id="Project" className="  bg-slate-200 shadow-xl shadow-black pt-10">
       <div className="relative">
@@ -25,18 +27,29 @@ const MyProject = () => {
         </h1>
         <div className="lg:p-10 m-20 max-sm:flex flex-row justify-evenly items-center   ">
           {" "}
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.Link}
-              className="p-5 bg-black text-white ml-5 max-sm:p-2 max-sm:m-2"
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
+          
 
-        <div></div>
+          {navigation.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.Link}
+                        className={classNames(
+                          item.current
+                            ? "p-5 bg-black text-white ml-5 max-sm:p-2 max-sm:m-2 hover:bg-slate-700 "
+                            : "p-5 bg-black text-white ml-5 max-sm:p-2 max-sm:m-2 hover:bg-slate-700"
+                        )}
+                        aria-current={item.current ? "page" : undefined}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+       
+        
+        </div>
+        
+        
+
+    
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import CV from "../assets/CV.pdf";
 
 const Presentation = () => {
   return (
-    <div className=' relative flex flex-col justify-center items-center  z-50 min-md:relative  text-8xl before:content-["Qui-suis-je"] before:text-black before:opacity-5 before:absolute before:top-10 before:left-[10%] before:text-9xl max-sm:text-5xl max-md:before:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0    '>
+    <div className=' relative flex flex-col justify-center items-center  z-50 min-md:relative  text-8xl before:content-["Qui-suis-je"] before:text-black before:opacity-5 before:absolute before:top-10 before:left-[20%] before:text-9xl max-sm:text-5xl max-md:before:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0    '>
       <h1 className="max-w-sm relative text-center text-4xl mt-20 before:content-['']  before:absolute before:-bottom-5 before:bg-black before:w-[100px] before:left-[30%] before:h-[1px]">
         Presentation
       </h1>
@@ -28,7 +28,7 @@ const Presentation = () => {
         </a>
        <p>ou voir mon Github:  <a
           className=" text-sm p-1.5 bg-black  text-white  hover:text-gray-500 rounded-md"
-          href={CV}
+          href="https://github.com/simon86000S"
           
         >
            Lien vers mon Github

@@ -8,45 +8,35 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import 'swiper/css/effect-fade';
-import debrou from "../assets/debrou.mp4";
+import "swiper/css/effect-fade";
 // import required modules
-import { Pagination, Navigation,EffectFade} from "swiper/modules";
-import navBar from "../assets/navBar.jpg";
+import { Pagination, Navigation, EffectFade } from "swiper/modules";
+import background from "../assets/background.jpg";
 const Caroussel = () => {
   return (
     <div>
-      
       <>
         <Swiper
-         effect={'fade'}
+          effect={"fade"}
           pagination={{
             type: "progressbar",
-            
           }}
           navigation={true}
-         
-        
-          modules={[Pagination, Navigation, EffectFade]} 
+          modules={[Pagination, Navigation, EffectFade]}
           className=" p-12 w-[50%] rounded-3xl max-sm:w-[100%]  "
         >
-          <SwiperSlide
-            className=" text-white  flex flex-col bg-black shadow-xl shadow-black "
+          <SwiperSlide className=" text-white  flex flex-col bg-black shadow-xl shadow-black ">
+            <img className="w-full h-full" src={background} />
            
-          >
-         
-         <img  src={navBar}  />
-            <img className="absolute top-0" src={navBar} />
-            
             <Link
               to="https://montanes-service-r4ru48cm5-sims-projects-d92c89a3.vercel.app"
-              className=" bg-lime-600    rounded-full text-xl mt-2  text-center"
+              className=" bg-gradient-to-b from-gray-800   rounded-full text-xl mt-2  text-center hover:bg-stone-600"
             >
-              Aller sur le site
+              Voir le site !! c'est ici
             </Link>
-            <h1 className="text-center text-xl text-lime-600">Site Vitrine</h1>
+            <h1 className="text-center text-xl text-white">Site Vitrine</h1>
 
-            <div className="flex flex-col p-2 ">
+            <div className="flex flex-col p-5 text-justify items-center justify-center ">
               <h3 className="underline decoration-solid ">
                 Présentation d’ensemble du projet:
               </h3>
@@ -60,17 +50,18 @@ const Caroussel = () => {
               <p>-Respect de la charte graphique </p>
               <p>-Recueil d'avis clients</p>
               <p>-Formulaire de contact</p>
-              <div>
+              
                 <h1 className="underline decoration-solid ">
                   Technologie utilisés:
                 </h1>
                 <p>-ViteJs</p>
                 <p>-Canvas</p>
               </div>
+              <div>
             </div>
           </SwiperSlide>
           <SwiperSlide
-            className="bg-white h-[580px]  rounded-md  "
+            className="bg-white h-[500px]  rounded-md  "
             data-swiper-autoplay="2000"
           >
             Slide 2

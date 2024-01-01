@@ -14,7 +14,7 @@ const App = () => {
        <Presentation/>
         <MyProject />
         <Routes>
-        <Route path='/Caroussel' element={<Caroussel/>}></Route>
+        <Route path='/' element={<Caroussel/>}></Route>
         <Route path='/Caroussel_Back' element={<Caroussel_Back/>}></Route>
         </Routes>
        
