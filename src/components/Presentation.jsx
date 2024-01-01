@@ -26,6 +26,13 @@ const Presentation = () => {
         >
            Télécharger Mon CV
         </a>
+       <p>ou voir mon Github:  <a
+          className=" text-sm p-1.5 bg-black  text-white  hover:text-gray-500 rounded-md"
+          href={CV}
+          
+        >
+           Lien vers mon Github
+        </a></p>
       </p>
     </div>
   );
