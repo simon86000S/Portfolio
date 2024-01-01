@@ -12,31 +12,27 @@ const MyProject = () => {
   const [active, setActive] = useState(true);
   const navigation = [
     { name: "ViteJs", Link: "Caroussel", current: true },
-    { name: "ViteJs & NodeJs", Link: "Caroussel_Back", current: false },
+    { name: "NodeJs", Link: "Caroussel_Back", current: false },
     { name: "NextJs", Link: "#", current: false },
     { name: "MySQL", Link: "#", current: false },
   ];
-  const Active = () => {
- setActive(!active)
-  };
+ 
   return (
     <div id="Project" className="  bg-slate-200 shadow-xl shadow-black pt-10">
       <div className="relative">
-        <h1 className='min-md:relative  text-8xl before:content-["Portfolio"] before:text-black before:opacity-5 before:absolute before:top-10 before:left-[40%] before:text-9xl max-sm:text-5xl max-md:before:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0  '>
+        <h1 className='min-md:relative  text-8xl before:content-["Portfolio"] before:text-black before:opacity-5 before:absolute before:top-10 before:left-[30%] before:text-9xl max-sm:text-5xl max-md:before:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0  '>
           Mes Projets
         </h1>
-        <div className="p-10 m-20">
+        <div className="lg:p-10 m-20 max-sm:flex flex-row justify-evenly items-center   ">
           {" "}
-          {navigation.map(item=>(
+          {navigation.map((item) => (
             <Link
-            key={item.name}
-            to={item.Link}
-            className="p-5 bg-black text-white ml-5"
-          
-            
-          >
-            {item.name}
-          </Link>
+              key={item.name}
+              to={item.Link}
+              className="p-5 bg-black text-white ml-5 max-sm:p-2 max-sm:m-2"
+            >
+              {item.name}
+            </Link>
           ))}
         </div>
 
