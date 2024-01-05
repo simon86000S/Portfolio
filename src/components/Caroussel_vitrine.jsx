@@ -23,10 +23,10 @@ const Caroussel = () => {
           }}
           navigation={true}
           modules={[Pagination, Navigation, EffectFade]}
-          className=" p-12 w-[50%] rounded-3xl max-sm:w-[100%]  "
+          className=" p-12 w-[60%] rounded-3xl max-sm:w-[100%]  "
         >
-          <SwiperSlide className=" text-white h-[500px]  flex flex-col bg-black shadow-xl shadow-black ">
-            <img className="w-full h-full" src={background} />
+          <SwiperSlide className=" text-white h-[540px]  flex flex-col bg-black shadow-xl shadow-black ">
+            <img className="w-full h-[150px]" src={background} />
            
             <Link
               to="https://montanes-service-r4ru48cm5-sims-projects-d92c89a3.vercel.app"
@@ -36,13 +36,13 @@ const Caroussel = () => {
             </Link>
             <h1 className="text-center text-xl text-white">Site Vitrine</h1>
 
-            <div className="flex flex-col p-5 text-justify items-center justify-center ">
+            <div className="flex flex-col p-5 text-justify items-center justify-center  ">
               <h3 className="underline decoration-solid ">
                 Présentation d’ensemble du projet:
               </h3>
               <p>
-                Montanes Service est une entreprise à deux activitées: Espace
-                vert et de Nettoyage de vitre
+                Montanes Service est une entreprise à deux activitées:<br></br>
+                 Espace vert et de Nettoyage de vitre
               </p>
               <h3 className="underline decoration-solid ">Missions:</h3>
               <p>-Création du Logo </p>
@@ -61,7 +61,7 @@ const Caroussel = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide
-            className="bg-white h-[500px]  rounded-md  "
+            className="bg-white h-[535px]  rounded-md  "
             data-swiper-autoplay="2000"
           >
             Slide 2

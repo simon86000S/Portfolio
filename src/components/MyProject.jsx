@@ -1,13 +1,9 @@
 import React from "react";
-import { Suspense, useState } from "react";
+import {useState } from "react";
 import { Link } from "react-router-dom";
-import { Canvas, useLoader } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+
 import "../../src/App.css";
-import { useFrame } from "@react-three/fiber";
-import { useRef } from "react";
-import { Player } from "../../Player";
-import Caroussel from "./Caroussel_vitrine";
+
 const MyProject = () => {
   const [active, setActive] = useState(true);
   const navigation = [
@@ -25,31 +21,23 @@ const MyProject = () => {
         <h1 className='min-md:relative  text-8xl before:content-["Portfolio"] before:text-black before:opacity-5 before:absolute before:top-10 before:left-[30%] before:text-9xl max-sm:text-5xl max-md:before:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0  '>
           Mes Projets
         </h1>
-        <div className="lg:p-20 m-10 ">
+        <div className="lg:p-20 m-10  z-10 ">
           {" "}
-          
-
           {navigation.map((item) => (
-                      <Link
-                        key={item.name}
-                        to={item.Link}
-                        className={classNames(
-                          item.current
-                            ? "p-10 bg-black text-white ml-5 max-sm:p-2 max-sm:m-2 hover:bg-slate-700 "
-                            : "p-5 bg-black text-white ml-5 max-sm:p-2 max-sm:m-2 hover:bg-slate-700"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-       
-        
+            <Link
+              key={item.name}
+              to={item.Link}
+              className={classNames(
+                item.current
+                  ? " p-5 bg-black text-white  ml-5 max-sm:p-2 max-sm:m-2 hover:bg-slate-700 "
+                  : " p-5 bg-black text-white ml-5 max-sm:p-2 max-sm:m-2 hover:bg-slate-700"
+              )}
+              aria-current={item.current ? "page" : undefined}
+            >
+              {item.name}
+            </Link>
+          ))}
         </div>
-        
-        
-
-    
       </div>
     </div>
   );

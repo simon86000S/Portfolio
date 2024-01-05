@@ -3,11 +3,11 @@ import CV from "../assets/CV.pdf";
 
 const Presentation = () => {
   return (
-    <div className=' relative flex flex-col justify-center items-center  z-50 min-md:relative  text-8xl before:content-["Qui-suis-je"] before:text-black before:opacity-5 before:absolute before:top-10 before:left-[20%] before:text-9xl max-sm:text-5xl max-md:before:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0    '>
+    <div className=' relative flex flex-col justify-center items-center   min-md:relative  text-8xl before:content-["Qui-suis-je"] before:text-black before:opacity-5 before:absolute before:top-10 before:left-[20%] before:text-9xl max-sm:text-5xl max-md:before:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0    '>
       <h1 className="max-w-sm relative text-center text-4xl mt-20 before:content-['']  before:absolute before:-bottom-5 before:bg-black before:w-[100px] before:left-[30%] before:h-[1px]">
         Presentation
       </h1>
-      <p className="  max-w-md text-xl p-10 leading-8  text-justify text-center  ">
+      <p className="max-w-md text-xl p-10 leading-8  text-justify text-center  ">
         En tant que <strong>développeur Web</strong> depuis plus de 3 ans, je
         suis passionné par la création de sites web et d'application mobile.
         J'ai acquis une connaissance dans différents langages de programmation,
@@ -18,7 +18,7 @@ const Presentation = () => {
         Je conçois et réalise des sites web et des {" "}
         <strong>applications Web mobiles.</strong>
         <br />
-        N'hésitez pas à voir mon CV au format pdf:{" "}
+        N'hésitez pas à voir mon CV au format pdf:{" "}"<br/>
         <a
           className=" text-sm p-1.5 bg-black  text-white  hover:text-gray-500 rounded-md"
           href={CV}
@@ -26,7 +26,8 @@ const Presentation = () => {
         >
            Télécharger Mon CV
         </a>
-       <p>ou voir mon Github:  <a
+      
+       <p>ou voir mon Github:  <br/>  <a
           className=" text-sm p-1.5 bg-black  text-white  hover:text-gray-500 rounded-md"
           href="https://github.com/simon86000S"
           

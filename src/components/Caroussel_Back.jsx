@@ -9,7 +9,6 @@ import "swiper/css/navigation";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import debrou from "../assets/debrou.mp4";
 // import required modules
 import { Pagination, Navigation, EffectFade } from "swiper/modules";
 import navBar from "../assets/navBar.jpg";
@@ -28,13 +27,11 @@ const Caroussel_Back = () => {
           modules={[Pagination, Navigation, EffectFade]}
           className=" p-12 w-[50%] rounded-3xl max-sm:w-[100%]  "
         >
-          <SwiperSlide className=" text-white  flex flex-col bg-black shadow-xl shadow-black ">
+          <SwiperSlide className=" text-white h-[525px]  flex flex-col bg-black shadow-xl shadow-black ">
             
             
             
-          <img src={debrou}  />
-            <img className="absolute top-0" src={navBar} />
-           
+          <img className="w-full h-[150px]" src={navBar} />           
             <Link
               to="https://montanes-service-r4ru48cm5-sims-projects-d92c89a3.vercel.app"
               className=" bg-lime-600    rounded-full text-xl mt-2  text-center"
@@ -67,13 +64,13 @@ const Caroussel_Back = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide
-            className="bg-white h-[580px]  rounded-md  "
+            className="bg-white h-[525px]  rounded-md  "
             data-swiper-autoplay="2000"
           >
             Slide 2
           </SwiperSlide>
           <SwiperSlide
-            className="bg-white h-[580px] rounded-md"
+            className="bg-white h-[525px] rounded-md"
             data-swiper-autoplay="2000"
           >
             Slide 3
