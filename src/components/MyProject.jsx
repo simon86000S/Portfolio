@@ -16,12 +16,12 @@ const MyProject = () => {
     return classes.filter(Boolean).join(" ");
   }
   return (
-    <div id="Project" className="  bg-slate-200 shadow-xl shadow-black pt-10">
+    <div id="Project" className=" z-50  bg-slate-200 shadow-xl shadow-black pt-10">
       <div className="relative">
         <h1 className='min-md:relative  text-8xl before:content-["Portfolio"] before:text-black before:opacity-5 before:absolute before:top-10 before:left-[30%] before:text-9xl max-sm:text-5xl max-md:before:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0  '>
           Mes Projets
         </h1>
-        <div className="lg:p-20 m-10  z-10 ">
+        <div className="lg:p-20 m-10  z-50 ">
           {" "}
           {navigation.map((item) => (
             <Link
@@ -29,8 +29,8 @@ const MyProject = () => {
               to={item.Link}
               className={classNames(
                 item.current
-                  ? " p-5 bg-black text-white  ml-5 max-sm:p-2 max-sm:m-2 hover:bg-slate-700 "
-                  : " p-5 bg-black text-white ml-5 max-sm:p-2 max-sm:m-2 hover:bg-slate-700"
+                  ? " p-5 bg-black text-white z-50 ml-5 max-sm:p-2 max-sm:m-2 hover:bg-slate-700 "
+                  : " p-5 bg-black text-white z-50 ml-5 max-sm:p-2 max-sm:m-2 hover:bg-slate-700"
               )}
               aria-current={item.current ? "page" : undefined}
             >
