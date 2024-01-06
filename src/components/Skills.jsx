@@ -71,8 +71,8 @@ const Skills = () => {
                   <li>-NextJs</li>
                 </ul>
                 <div>
-                  <h2 className="pt-10 leading-8  underline">Outils de développement:</h2>
-                  <ul className="leading-8">
+                  <h2 className="pt-10 leading-8  text-xl   underline">Outils de développement:</h2>
+                  <ul className="leading-8 pb-5">
                     <li>-Git</li>
                     <li>-GitHub</li>
                     <li>-VSCode</li>
@@ -94,8 +94,8 @@ const Skills = () => {
                 <li>-PHP </li>
               </ul>
               <div>
-                <h2 className="underline pt-10 ">Outils de développement:</h2>
-                <ul className="leading-8">
+                <h2 className="underline pt-10  text-xl  ">Outils de développement:</h2>
+                <ul className="leading-8 pb-5">
                   <li>-Git</li>
                   <li>-GitHub</li>
                   <li>-VSCode</li>
@@ -120,7 +120,7 @@ const Skills = () => {
               </ul>
               <div>
                 <h2 className="text-xl underline pt-10">Outils de développement:</h2>
-                <ul className="leading-8">
+                <ul className="leading-8 pb-5">
                   <li>-Figma</li>
                   <li>-ThreeJs</li>
                 </ul>
