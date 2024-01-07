@@ -12,7 +12,7 @@ const navigation = [
   { name: "Accueil", href: "#Home", current: true },
   { name: "Projets", href: "#Project", current: false },
   { name: "Compétences", href: "#Skill", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Contact", href: "#Contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -125,7 +125,7 @@ export default function Navbar() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="#Contact"
                             className={classNames(
                               active ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700"
