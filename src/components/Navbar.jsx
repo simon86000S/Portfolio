@@ -43,17 +43,17 @@ export default function Navbar() {
               </div>
 
               <div className="flex mt-8  w-[80%] sm:items-stretch sm:justify-start">
-                <div className="hidden sm:-ml-10 flex items-center sm:block">
-                  <div className=" flex justify-between  text-[15px]  uppercase">
+                <div className="hidden sm:-ml-10 flex  sm:block">
+                  <div className=" flex   text-[15px]  uppercase">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "text-gray-900 text-sm font-extrabold  flex   relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[130px] before:left-[25px] before:h-[100px] before:bg-gradient-to-b from-gray-800 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-gray-500  opacity-0.5   "
-                            : "text-gray-900 text-sm font-extrabold  flex relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[130px] before:left-[25px] before:h-[100px] before:bg-gradient-to-r from-gray-800 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-gray-500  opacity-0.5  ",
-                          " px-[55px] text-[13px] font-extrabold py-[39px] font-medium flex  hover:text-green-600"
+                            ? "text-gray-900 text-sm font-extrabold  flex   relative [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[109px] before:left-[20px] before:h-[100px] before:bg-gradient-to-b from-gray-800 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-gray-500  opacity-0.5   "
+                            : "text-gray-900 text-sm font-extrabold  flex relative left-0 [clip-path:circle([clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:content-['']   before:w-[109px] before:left-[20px] before:h-[100px] before:bg-gradient-to-r from-gray-800 to-transparent before:absolute before:top-0 before:[clip-path:polygon(20%_0%,74%_0%,100%_24%,100%_24%,100%_100%,80%_100%,33%_100%,0%_79%,0_0)] before:border-[2px] before:border-gray-500  opacity-0.5  ",
+                          " px-[45px] text-[12px] font-extrabold py-[39px] font-medium flex  hover:text-green-600"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
