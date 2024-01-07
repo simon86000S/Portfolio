@@ -7,41 +7,12 @@ import { OrbitControls } from "@react-three/drei";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import { FaConnectdevelop } from "react-icons/fa6";
 import { SiAltiumdesigner } from "react-icons/si";
+import { FaDatabase } from "react-icons/fa6";
+import Contact from "./Contact";
 const Skills = () => {
-  function Scene() {
-    const ref = useRef(null);
-    useFrame((_, delta) => {
-      ref.current.rotation.y = 10.4;
-    });
-    function Scene() {
-      return (
-        <>
-          <mesh
-            onClick={(e) => console.log("click")}
-            ref={ref}
-            scale={[180, 180, 180]}
-          >
-            <Player />
-          </mesh>
-        </>
-      );
-    }
 
-    return (
-      <>
-        <mesh
-          className="zIndex:-10  "
-          onClick={() => setHover(true)}
-          ref={ref}
-          scale={[180, 180, 180]}
-        >
-          <Player />
-        </mesh>
-      </>
-    );
-  }
   return (
-    <div className=" h-[100vh] bg-slate-200 shadow-xl shadow-black z-50">
+    <div id="Skill" className=" h-[100vh] bg-slate-200 shadow-xl shadow-black z-50">
       <div className="relative">
         <h1 className=' min-md:relative  text-8xl before:content-["à_propos"] before:text-black before:opacity-5 before:absolute before:top-10 before:left-[40%] before:text-9xl max-sm:text-5xl max-md:before:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0   '>
           Mes Compétences
@@ -96,8 +67,6 @@ const Skills = () => {
               <div>
                 <h2 className="underline pt-10  text-xl  ">Outils de développement:</h2>
                 <ul className="leading-8 pb-5">
-                  <li>-Git</li>
-                  <li>-GitHub</li>
                   <li>-VSCode</li>
                 </ul>
               </div>
@@ -125,10 +94,33 @@ const Skills = () => {
                   <li>-ThreeJs</li>
                 </ul>
               </div>
+              
+            </div>
+            
+          </div>
+          <div className=" p-10 flex justify-center  text-slate-200 text-6xl">
+            {" "}
+            <FaDatabase  />
+          </div>
+          <div className=" text-white max-sm:flex max-sm:flex-col  max-sm:items-center  relative flex  justify-around before:content-[''] before:w-full before:h-[2px] before:bg-white before:absolute before:bottom-0 before:left-0">
+            <h1 className="  uppercase text-2xl pb-10 ">Base de données </h1>
+            <div>
+              <h2 className="underline text-xl pt-10 leading-8 ">Languages:</h2>
+              <ul className="leading-8">
+                <li>-MySQL</li>
+                <li>-SQLite </li>
+              </ul>
+              <div>
+                <h2 className="underline pt-10  text-xl  ">Outils de développement:</h2>
+                <ul className="leading-8 pb-5">
+                  <li>-VSCode</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <Contact />
     </div>
   );
 };

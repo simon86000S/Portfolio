@@ -11,7 +11,7 @@ import sim from "../assets/simm.jpg";
 const navigation = [
   { name: "Accueil", href: "#Home", current: true },
   { name: "Projets", href: "#Project", current: false },
-  { name: "Compétences", href: "#", current: false },
+  { name: "Compétences", href: "#Skill", current: false },
   { name: "Contact", href: "#", current: false },
 ];
 
@@ -112,13 +112,26 @@ export default function Navbar() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="#Skill"
                             className={classNames(
                               active ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
                           >
                             Compétences
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Contact
                           </a>
                         )}
                       </Menu.Item>

@@ -6,22 +6,23 @@ import Skills from "./components/Skills";
 import Caroussel from "./components/Caroussel_vitrine";
 import Caroussel_Back from "./components/Caroussel_Back";
 import Presentation from "./components/Presentation";
+
 const App = () => {
   return (
     <main>
       <Router>
         <Home />
-       <Presentation/>
+        <Presentation />
         <MyProject />
         <Routes>
-        <Route path='/' element={<Caroussel/>}></Route>
-        <Route path='/Caroussel_Back' element={<Caroussel_Back/>}></Route>
+          <Route path="/" element={<Caroussel />}></Route>
+          <Route path="/Caroussel_Back" element={<Caroussel_Back />}></Route>
         </Routes>
-       
-        <Skills/>
 
-       
+        <Skills/>
+     
       </Router>
+     
     </main>
   );
 };

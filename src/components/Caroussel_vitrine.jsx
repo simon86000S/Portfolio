@@ -25,7 +25,7 @@ const Caroussel = () => {
           modules={[Pagination, Navigation, EffectFade]}
           className=" p-12 w-[60%] rounded-3xl max-sm:w-[100%]  "
         >
-          <SwiperSlide className=" text-white h-[540px]  flex flex-col bg-black shadow-xl shadow-black ">
+          <SwiperSlide className=" text-white h-[545px]  flex flex-col bg-black shadow-xl shadow-black ">
             <img className="w-full h-[150px]" src={background} />
            
             <Link
@@ -34,7 +34,7 @@ const Caroussel = () => {
             >
               Voir le site !! c'est ici
             </Link>
-            <h1 className="text-center text-xl text-white">Site Vitrine</h1>
+            <h1 className="text-center text-xl text-white">Site vitrine</h1>
 
             <div className="flex flex-col p-5 text-justify items-center justify-center  ">
               <h3 className="underline decoration-solid ">
@@ -55,19 +55,20 @@ const Caroussel = () => {
                   Technologie utilisés:
                 </h1>
                 <p>-ViteJs</p>
-                <p>-Canvas</p>
+                <p>-EmailJS</p>
+                <p>-Trustmary</p>
               </div>
               <div>
             </div>
           </SwiperSlide>
           <SwiperSlide
-            className="bg-white h-[535px]  rounded-md  "
+            className="bg-white h-[545px]  rounded-md  "
             data-swiper-autoplay="2000"
           >
             Slide 2
           </SwiperSlide>
           <SwiperSlide
-            className="bg-white h-[500px] rounded-md"
+            className="bg-white h-[545px] rounded-md"
             data-swiper-autoplay="2000"
           >
             Slide 3
