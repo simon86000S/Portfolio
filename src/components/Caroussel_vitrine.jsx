@@ -23,10 +23,10 @@ const Caroussel = () => {
           }}
           navigation={true}
           modules={[Pagination, Navigation, EffectFade]}
-          className=" p-12 w-[60%] rounded-3xl max-sm:w-[100%]  "
+          className=" p-12 w-[60%] h-[124%] rounded-3xl max-sm:w-[100%]   "
         >
-          <SwiperSlide className=" text-white h-[545px]  flex flex-col bg-black shadow-xl shadow-black ">
-            <img className="w-full h-[150px]" src={background} />
+          <SwiperSlide className=" text-white  flex flex-col bg-black shadow-xl shadow-black ">
+            <img className="w-full " src={background} />
            
             <Link
               to="https://montanes-service-r4ru48cm5-sims-projects-d92c89a3.vercel.app"
