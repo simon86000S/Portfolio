@@ -23,7 +23,7 @@ const Caroussel = () => {
           }}
           navigation={true}
           modules={[Pagination, Navigation, EffectFade]}
-          className=" p-12 w-[60%] h-[124%] rounded-3xl max-sm:w-[100%]   "
+          className=" mt-10 p-12 w-[60%] h-[124%] rounded-3xl max-sm:w-[100%]   "
         >
           <SwiperSlide className=" text-white  flex flex-col bg-black shadow-xl shadow-black ">
             <img className="w-full " src={background} />

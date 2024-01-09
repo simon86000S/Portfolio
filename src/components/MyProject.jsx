@@ -21,17 +21,14 @@ const MyProject = () => {
         <h1 className='min-md:relative  text-8xl before:content-["Portfolio"] before:text-black before:opacity-5 before:absolute before:top-10 before:left-[30%] before:text-9xl max-sm:text-5xl max-md:before:text-5xl max-sm:before:text-[50px] before:left-25% flex justify-center max-sm:before:bottom-0  '>
           Mes Projets
         </h1>
-        <div className="lg:p-20 m-10 max-sm:p-0 max-sm:mt-10 max-sm:m-0  ">
+        <div className="lg:p-20 m-10 max-sm:p-0 max-sm:mt-20  max-sm:m-0  ">
           {" "}
           {navigation.map((item) => (
             <Link
               key={item.name}
               to={item.Link}
-              className={classNames(
-                item.current
-                  ? " p-5 bg-black text-white  ml-5 max-sm:p-2 max-sm:m-2 hover:bg-slate-700 "
-                  : "  p-5 bg-black text-white  ml-5 max-sm:p-2 max-sm:m-2 hover:bg-slate-700"
-              )}
+              className="p-5 bg-black text-white  hover:bg-slate-700  ml-5 max-sm:m-2 max-sm:p-2"
+              
               aria-current={item.current ? "page" : undefined}
             >
               {item.name}
