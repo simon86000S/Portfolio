@@ -1,5 +1,5 @@
 import React from "react";
-import {useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "../../src/App.css";
@@ -7,10 +7,10 @@ import "../../src/App.css";
 const MyProject = () => {
   const [active, setActive] = useState(true);
   const navigation = [
-    { name: "ViteJs", Link: "/", current: true },
-    { name: "NodeJs", Link: "/Caroussel_Back", current: false },
-    { name: "NextJs", Link: "#", current: false },
-    { name: "MySQL", Link: "#", current: false },
+    { name: "Site vitrine", Link: "/", current: true },
+    { name: "Site e-commerce", Link: "/Caroussel_Back", current: false },
+    { name: "Application", Link: "#", current: false },
+    { name: " Marketplace", Link: "#", current: false },
   ];
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -27,8 +27,8 @@ const MyProject = () => {
             <Link
               key={item.name}
               to={item.Link}
-              className="p-5 bg-black text-white  hover:bg-slate-700  ml-5 max-sm:m-2 max-sm:p-2"
-              
+              className="p-5 bg-black text-white  hover:bg-slate-700  ml-5 max-sm:mb-10 max-sm:flex max-sm:ml-0"
+
               aria-current={item.current ? "page" : undefined}
             >
               {item.name}
