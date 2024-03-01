@@ -27,7 +27,7 @@ const MyProject = () => {
             <Link
               key={item.name}
               to={item.Link}
-              className="p-5 bg-black text-white  hover:bg-slate-700  ml-5 max-sm:mb-10 max-sm:flex max-sm:ml-0"
+              className="  p-5 bg-black text-white  hover:bg-slate-700  ml-5 max-sm:mb-10 max-sm:flex max-sm:ml-0 max-sm:justify-center"
 
               aria-current={item.current ? "page" : undefined}
             >
